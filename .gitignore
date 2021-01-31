@@ -1,0 +1,11 @@
+/.idea
+
+/allure-results
+
+/src/main/java
+
+/target
+
+/pom.xml
+
+/projectAutoTesting.iml
