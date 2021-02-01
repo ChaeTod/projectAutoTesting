@@ -126,13 +126,8 @@ public class MainPageTest {
         taxYes.click();
         agreement.click();
 
-        interest.sendKeys(String.valueOf(5));
-        for (int i = 0; i <= 4; i++) {
-            periodRng.sendKeys(Keys.RIGHT);
-        }
-
         calculateBtn.click();
-        Assert.assertEquals(result.getText(), "Total amount : 35246.84 , net profit : 15246.84");
+        Assert.assertEquals(result.getText(), "Total amount : 20160.00 , net profit : 160.00");
         Assert.assertNotEquals(result.getText(), "Total amount : 25246.84 , net profit : 15246.84");
     }
 
